@@ -7,11 +7,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="BP.css" rel="stylesheet">
 
+<!--Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bp1.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
 p { width: 70%;  }
-footer { background-color: #35e02c; 
-		height: 150px;
-		margin-top: 100px; }
+
 </style>
 </head>
 <body>
@@ -20,15 +23,25 @@ footer { background-color: #35e02c;
 	<img id="logo" src="BP.jpg" style="max-width:100%;" width="300" height="100" alt="BP Logo"><h1 id="welcome">Welcome!</h1>
 </header>
 
-<nav>
-	<ul>
-		<li><a href="home.html">Home</a></li>
-		<li><a href="about.html">About</a></li>
-		<li>Specials</li>
-		<li><a href="sm.html">Social Media</a></li>
-		<li>Appointment</li>
-		<li>Links</li>
-	</ul>
+<!--Nav Bar Section -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="home.html">Bayview BP</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="home.html">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="index.html">Additional Info<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="appt.html">Appointments</a></li>
+          <li><a href="links.html">Links</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </li>
+      <li><a href="specials.html">Specials</a></li>
+      <li><a href="sm.html">Social Media</a></li>
+    </ul>
+  </div>
 </nav>
 
 <main>
@@ -54,8 +67,15 @@ footer { background-color: #35e02c;
 
 
 <footer>
-
+<p><address>Bayview BP &bull;
+			  8595 Bayview Blvd &bull;
+			  Norfolk, VA 23503 &bull;
+			  (757) 583-1355</address> Contact us: <a href="mailto:bayviewBP@yahoo.com">
+bayviewBP@yahoo.com</a>.</p>
 </footer>
-
+<!--The following is the bootstrap plugins --> 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
